@@ -1,0 +1,1038 @@
+.app {
+    width: 25%;
+    height: 190px;    
+    float: left;    
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;  
+}
+
+.app img{
+  width: 100%;
+}
+
+.app .mask, .app .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.app img {
+    display: block;
+    position: relative;
+}
+.app h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+}
+
+.app p {    
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+.app a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #004884;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+.app a.info:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.app-dk img { 
+    transition: all 0.2s linear;
+}
+
+.app-dk .mask {
+    opacity: 0;
+    background-color: rgba(0,72,132, 0.7); 
+    /*background-color: rgba(219,127,8, 0.7); */
+    transition: all 0.4s ease-in-out;
+}
+
+.app-dk h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.app-dk p { 
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.app-dk a.info{
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.app-dk:hover img { 
+  transform: scale(1.1);
+} 
+
+.app-dk:hover .mask { 
+  opacity: 1;
+}
+
+.app-dk:hover h2,
+.app-dk:hover p,
+.app-dk:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.app-dk:hover p {
+    transition-delay: 0.1s;
+}
+
+.app-dk:hover a.info {
+    transition-delay: 0.2s;
+}
+
+/*
+Diki Alfarabi Hadi
+Teknik informatika 2012
+blog : www.malasngoding.com
+*/
+
+.carousel-inner{  
+  width: 100%;
+  height: 400px; 
+}
+
+.carousel-inner img{
+  width: 100%;
+  height: auto; 
+  -webkit-transition: all 0.7s ease; transition: all 0.7s ease; 
+}
+
+.carousel-inner img:hover{
+  -webkit-transform:scale(1.05); 
+  transform:scale(1.05); 
+}
+
+/*umum*/
+body{
+  font-family: 'Open Sans',sans-serif;
+  background: #f2f5f7;
+}
+
+.scrollToTop{
+  width:40px; 
+  height:40px;
+  bottom: 10px;
+  right:20px;
+  padding:10px; 
+  text-align:center;     
+  color: #78B5C6;
+  text-decoration: none;
+  position:fixed;
+  display:none;
+  background: #004884;
+  transition: all 0.3s ease-in-out;
+}
+.scrollToTop:hover{
+  text-decoration:none;
+  color: #78B5C6;
+  background: #003A6A;
+}
+/*akhir umum*/
+
+
+/*header*/
+header.header{    
+  background: #003A6A;
+  border-bottom: 4px solid #D5D5D5;
+  margin-bottom: 20px;  
+}
+
+/*header kiri*/
+header.header .header-kiri{  
+  height: 80px;
+  padding: 0;
+}
+
+header.header .header-kiri .logo{
+  width: 75px;
+  height: 75px;
+  margin: 3px 0;
+  padding-left: 0;
+}
+
+/*akhir header kiri*/
+
+/*header tengah*/
+header.header .header-tengah{    
+  height: 80px;
+
+}
+
+header.header .header-tengah h1.judul-web{  
+  color: #fff;  
+  font-size: 20pt;
+  margin: 16px 0 0 -40px;
+}
+
+header.header .header-tengah h3.deskripsi-web{
+  margin: 0 0 0 -38px;
+  font-size: 15pt;
+  color: #fff;
+}
+/*akhir header tengah*/
+
+/*header kanan*/
+header.header .header-kanan{    
+  padding: 10px 0 0 0;
+  text-align: right;
+  height: 80px;  
+}
+
+header.header .header-kanan .header-tanggal{  
+  color: #8ab5d6;
+  margin-bottom: 5px;
+  font-size: 10pt;
+}
+
+
+header.header .header-kanan .search-form .search{
+  width: 90%;
+  background: transparent;
+  padding: 10px;
+  border:1px solid #00569d;
+  background: #004074;
+  font-size: 9pt;
+  color: #fff;
+}
+
+header.header .header-kanan .search-form .search::-webkit-input-placeholder {
+  color: #8AB5D6;
+}
+
+header.header .header-kanan .search-form .search:-moz-placeholder {
+  color: #8AB5D6;
+}
+
+header.header .header-kanan .search-form .search::-moz-placeholder {
+  color: #8AB5D6;
+}
+
+header.header .header-kanan .search-form .search:-ms-input-placeholder {
+  color: #8AB5D6;
+}
+/*akhir header kanan*/
+/*end header*/
+
+/*aplikasi kampus*/
+.aplikasi{
+  margin: 10px 0;  
+  overflow: hidden;
+}
+
+/*end aplikasi kampus*/
+
+/*content*/
+.content{
+  background: white;
+  overflow: hidden;
+  padding: 20px 0px;    
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  margin-bottom: 10px;
+}
+
+.content .carousel-inner{    
+  height: 100% !important; 
+}
+
+.content .carousel-inner img{    
+  height: 100% !important; 
+}
+
+.content .carousel{
+  margin-bottom: 30px;
+}
+
+.widget .carousel img{  
+  height: 400px;
+  width: 100%; 
+} 
+
+.content > .col-md-9{
+  border-right: 1px solid #ddd;
+}
+/*end content*/
+
+/*sidebar*/
+.sidebar{
+  padding:0;
+}
+
+.sidebar .widget{  
+  margin-bottom: 25px;
+}
+
+.sidebar .widget > h4{
+  font-size: 14pt;
+}
+
+.sidebar .widget ul{
+  padding-left: 20px;
+  margin: 0;
+}
+
+.sidebar .widget ul li{
+  list-style: square;   
+  margin-bottom: 5px;
+}
+/*end sidebar*/
+
+/*post index*/
+a:hover{
+  text-decoration: none;
+}
+
+.kerja-sama-box{
+  margin-top: 20px;  
+}
+
+article.box{
+  overflow: hidden;  
+  padding-bottom: 10px;
+  height: auto;  
+  min-height: 200px;  
+  text-align: justify;
+  margin: 10px 0 20px 0;
+}
+
+article.box p{  
+  line-height: 1.5;
+}
+
+article.box .no-gambar{
+  padding: 0;    
+}
+
+article.box .tulisan{
+  padding: 0;  
+}
+
+article.box .gbr{
+  padding: 0;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+article.box .gbr img{
+  width: 100%;
+  min-height: 230px;
+  height: auto; 
+  -webkit-transition: all 0.7s ease; transition: all 0.7s ease; 
+}
+
+article.box .gbr img:hover{
+  -webkit-transform:scale(1.05); 
+  transform:scale(1.05); 
+}
+
+article.box .judul-posting{
+  margin: 0;
+  text-align: left;
+  font-size: 17pt;  
+}
+
+article.box .info{
+  margin: 10px 0px; 
+  text-align: justify; 
+}
+
+article.box .info .date{
+  margin-right:10px;
+  padding-right:10px;
+}
+
+article.box .info span:first-child{
+  border-right: 1px dotted #ddd;
+}
+/*end post index*/
+
+/*posting*/
+article.bergaris{
+  border-bottom: 1px solid #eee ;
+}
+
+article.post{
+  overflow: hidden;  
+  padding-bottom: 10px;
+  height: auto;
+  min-height: 200px;  
+  text-align: justify;
+  margin: 10px 0 20px 0;
+}
+
+article.post p{
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.judul-archive{
+  margin: 0;
+  font-size: 19pt;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+article.page .judul-posting{
+  margin: 20px 0 20px 0 !important;
+  font-size: 19pt;      
+}
+
+article.page img{
+  width: 100%;
+  max-width: 100%;
+}
+
+article.post .no-gambar{
+  padding: 0;  
+  /*height: 180px;  */
+}
+
+article.post .post-cover{
+  width: 100%;
+}
+
+article.post .kiri{
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+article.post .kiri img{
+  width: 100%;
+  height: auto; 
+  /*-webkit-transition: all 0.7s ease; transition: all 0.7s ease; */
+}
+
+article.post .kiri img:hover{
+  /*-webkit-transform:scale(1.05); */
+  /*transform:scale(1.05); */
+}
+
+article.post .judul-posting{
+  margin: 0;
+  font-size: 17pt;  
+}
+
+article.post .info{
+  margin: 10px 0px;  
+}
+
+article.post .info .date{
+  margin-right:10px;
+  padding-right:10px;
+}
+
+article.post .info span:first-child{
+  border-right: 1px dotted #232323;
+}
+
+article.single .info{
+  margin-bottom: 20px !important;
+}
+
+article.single table tr,
+article.single table td{
+  padding: 10px;  
+}
+
+article.single table{
+  margin: 10px 0;  
+  width: 100%;
+}
+
+article.single .img-cover{
+  margin-bottom: 25px !important;
+  max-width: 100%; 
+  max-height: 300px;
+}
+
+article.single p img{
+  width: auto;
+}
+/*end posting*/
+
+/*pagination*/
+
+.pagination a{
+  background: #004884;
+  padding:6px 10px;
+  border: 1px solid #00569D;
+  color: #51AAD6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pagination > div{
+  display: inline-block;
+}
+
+.pagination a:hover{
+  background: #003A6A;
+}
+
+.pagination strong{
+  background: #003A6A;
+  padding:6px 10px;
+  border: 1px solid #00569D;
+  color: #51AAD6;
+  text-decoration: none;
+}
+
+/*end pagination*/
+
+/*footer*/
+.footer-atas{
+  background: #004884;
+  overflow: hidden;  
+  color: #8ab5d6;
+  padding: 30px 20px 40px 20px;
+  border-top: 4px solid #D5D5D5;
+}
+
+.footer-bawah{
+  background: #003A6A;
+  padding: 20px;
+  color: #8AB5D6;  
+}
+/*end footer*/
+
+/*widget*/
+/*footer widget*/
+.footer-widget{
+  margin-top: 10px;
+}
+
+.footer-widget h4{  
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  font-size: 13px;
+}
+
+.footer-widget ul{
+  padding: 0 15px 0 15px;
+  margin: 0;     
+}
+
+.footer-widget ul li{
+  list-style-type: square;  
+  line-height: 24px;
+  padding-left: 1px;
+}
+
+.footer-widget ul li a{
+  transition: color 0.2s ease;
+  color: #8ab5d6;  
+  text-decoration: none;
+}
+
+.footer-widget ul li a:hover{  
+  color: #fff;    
+}
+
+
+/*widget social*/
+.widget-social{
+  padding: 0 !important;
+}
+
+.widget-social li{
+  list-style-type: none !important;
+}
+
+.widget-social li a{  
+  float: left;
+  background: #003A6A;
+  margin-right: 7px;
+  padding: 5px !important;
+  text-align: center;
+  width: 35px; 
+}
+
+/*widget calendar jquery ui*/
+.calendar-widget{
+  background: #fff;
+}
+
+.calendar-widget .ui-widget-content{
+  border:1px solid #eee;
+  padding: 10px;
+}
+
+.calendar-widget .ui-datepicker-header{
+  margin-bottom: 10px;
+}
+
+.calendar-widget .ui-datepicker-next{
+  float: right;
+}
+
+.calendar-widget .ui-widget-content table{
+  width: 100%;
+}
+
+.calendar-widget table th,
+.calendar-widget table td{
+  text-align: center;
+}
+
+.calendar-widget .ui-datepicker-today{
+  border:1px solid #eee;
+}
+
+/*notfound*/
+.notfound img{
+  width: 20%;
+}
+
+.notfound a{
+  color: #004884;
+  text-decoration: none;
+}
+
+.notfound h1{
+  font-weight: normal;
+}
+/*end notfound*/
+
+
+textarea.textarea-pengaduan{
+  resize: none;
+  height: 200px;
+}
+
+
+.content-dosen{
+  min-height: 600px;
+}
+
+.content-dosen .judul-dosen{
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.content-dosen .dosen-thumbnail{
+  height: 300px;
+  /*height: auto;*/
+  width: 17.1%;
+  margin: 15px;
+  float: left;
+  border: 1px solid #ccc;
+}
+
+.content-dosen .dosen-thumbnail .dosen-foto{
+  height: 190px;      
+  /*background: blue;*/
+  padding: 0;
+  overflow: hidden;
+}
+
+.content-dosen .dosen-thumbnail .dosen-foto img{
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.7s ease; transition: all 0.7s ease; 
+}
+
+.content-dosen .dosen-thumbnail .dosen-foto img:hover{
+  -webkit-transform:scale(1.05); 
+  transform:scale(1.05); 
+}
+
+
+.content-dosen .dosen-thumbnail .dosen-info{
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+
+.content-dosen .alert-moto{
+  width: 100%;
+  background: #8AB5D6;
+  color: #fff;
+  border-radius: 0;
+  border-left: 6px solid #004884;
+}
+
+.content-dosen .foto-dosen img{
+  width: 100%;
+}
+
+.developer{
+  text-decoration: none;
+  
+}
+
+.developer:hover{
+  color: #fff;
+}
+
+
+/*menu dua*/
+
+.fixed-menu {
+    position: fixed;
+    top:0; 
+    left:0;
+    width: 100%; 
+    z-index: 9999;
+    padding-left: 105px;
+    padding-right: 105px;
+    background: #003A6A;
+}
+
+.menu-dua ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 100%;    
+  background: #004884;
+  border:1px solid #00569D;
+  z-index: 888; 
+}   
+
+.menu-dua ul li {
+  display: block;
+  position: relative;
+  float: left;    
+}
+
+.menu-dua li ul { 
+  display: none; 
+} 
+
+.menu-dua ul li a {
+  display: block;
+  padding: 17px 22px;  
+  min-width: 50px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #8AB5D6;
+  transition: color 0.3s ease;
+  
+}
+
+.menu-dua ul li a:hover { 
+  color: #fff;  
+}
+
+
+
+
+.menu-dua li:hover > ul {
+  display: block;
+  position: absolute;
+  background: #fff;  
+  min-width: 200px;
+}
+
+.menu-dua li:hover > ul li a {
+  color: #8AB5D6;
+  padding: 10px 10px;
+  background: #003A6A;
+
+}
+
+.menu-dua li:hover li { 
+  float: none; 
+}
+
+.menu-dua li:hover li a:hover {     
+  color: #fff;
+}
+
+.menu-dua .main-menu-satu li ul li { 
+  border-top: 0; 
+}
+.menu-dua ul ul ul {
+  left: 100%;
+  top: 0;
+}
+.menu-dua ul:before,
+.menu-dua ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+
+}
+
+.menu-dua ul:after { 
+  clear: both; 
+}
+
+.menu-responsif{
+    display: none;
+    padding: 12px;
+    background: #004884;
+    border: 1px solid #00569D;
+    color: #fff;
+    text-align: center;
+  }
+
+
+  /*end menu dua*/
+
+  .backlink{    
+    color: #003A6A;
+    position: absolute;    
+  }
+
+   .backlink:hover{    
+    color: #003A6A;
+    cursor: default;
+  }
+
+@media screen and (max-width: 1200px){ 
+
+  .app{
+    width: 33.3%;
+    height: 200px;
+  }
+
+  .app .mask{
+    width: 100%;
+    height: 100%;
+  }
+
+  article.post .kiri{
+    width: 30%;    
+  }
+
+  article.post .kanan{
+    width: 70%;    
+  }
+
+  .content-dosen .dosen-thumbnail{      
+      width: 21%;   
+      height: 270px;
+    }
+
+}
+
+@media screen and (max-width: 991px){ 
+
+  .app{
+    width: 50%;
+    height: 240px;
+  }
+
+  .app .mask{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  article.post .kiri{
+    width: 30%;  
+    float: left;    
+  }
+
+  article.post .kanan{
+    width: 70%;    
+    float: left;    
+  }
+
+  /*menu*/
+  .menu-responsif{
+    display: block;    
+  }
+
+  .menu-dua ul{
+    display: none;
+    width: 100%;      
+    background: red;
+  }
+
+  .menu-dua ul li{
+    width: 100%;
+    float: none;        
+    background: #004884;    
+    color: #fff;    
+  }
+
+
+  .fixed-menu {
+    position: relative;
+    padding-left: 0;
+    padding-right:0;   
+  }
+
+  .content-dosen .dosen-thumbnail{      
+      width: 28%;   
+      height: 270px;
+    }
+
+}
+
+@media screen and (max-width: 800px){   
+
+    .app{
+      width: 50%;
+      height: 200px;
+    }
+
+    .carousel{
+      display: none;
+    }
+
+    .header-tengah h1,
+    .header-tengah .deskripsi-web{
+      text-align: right;
+    }
+
+    .search-form .search{
+      margin-bottom: 15px;     
+    }
+
+}
+
+@media screen and (max-width: 600px){ 
+
+    .app{
+      width: 50%;
+      height: 182px;
+    }
+
+    .header-tengah{
+      width: 100%;      
+    }
+
+    .header-kiri a{
+     margin: 10px auto;
+     text-align: center;
+    }
+
+    .header-tengah h1,
+    .header-tengah .deskripsi-web{
+      text-align: center;      
+    }
+
+    .content-dosen .dosen-thumbnail{      
+      width: 44%;   
+      height: 270px;
+    }
+
+}
+
+@media screen and (max-width: 500px){ 
+
+    .app{
+      width: 100%;
+      height: 270px;
+    }
+
+    .header-tengah{
+      width: 100%;     
+    }
+
+    .header-tengah h1,
+    .header-tengah .deskripsi-web{
+      text-align: center;       
+    }
+
+    article.post .kiri{
+      width: 100%;  
+      float: none;
+      margin-bottom: 10px;     
+    }
+
+    article.post .kanan{
+      width: 100%;
+      float: none;          
+    }   
+
+    .content-dosen .dosen-thumbnail{      
+      width: 42%;   
+      height: 270px;
+    }
+
+    .footer-bawah .align-left,
+    .footer-bawah .align-right{
+      text-align: center;
+      float: none;
+    }
+    
+}
+
+
+.content-gallery .dosen-thumbnail{
+  height: auto;    
+}
+
+.media-detail .media-kiri{
+  padding: 0;  
+  border-right: 1px solid #ddd;
+}
+
+.media-detail .media-kiri iframe,
+.media-detail .media-kiri img{
+  max-width: 100%;
+}
+
+.media-detail .media-kiri .video{
+  width: 90%;
+  height: 450px;
+  border:none;
+}
+
+.content-gallery-media{
+  padding-bottom: 100px;  
+}
+
+.content-gallery-media .dosen-thumbnail{
+  height: auto;
+  border: none;    
+}
+
+.content-gallery-media .dosen-thumbnail .dosen-foto{
+  height: 150px;      
+  padding: 0;
+  overflow: hidden;    
+}
+
+.content-gallery-media .dosen-thumbnail .dosen-foto iframe{  
+  border: none;
+  width: 100%;  
+}
+
+.content-gallery-media .link-video:hover iframe{
+  display: none;
+}
+
+.content-gallery-media .link-video:hover .dosen-thumbnail{
+    background: black;
+    z-index: 99999;  
+}
